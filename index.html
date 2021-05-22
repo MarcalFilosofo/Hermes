@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hermes</title>
+</head>
+<body>
+    <img src="img/item1.jpg" alt="Praias gregas" class="fundo" id="wallpaper">
+    <header class="cabecalho">
+        <h1>
+            Hermes
+        </h1>
+        
+    </header>
+    <nav class="menu">
+        <ul>
+            <li id="grecia" onclick="mudarFundo('item1', 'Grécia')">Grécia</li>
+            <li id="paris" onclick="mudarFundo('item2', 'Paris')">Paris</li>
+            <li id="istanbul" onclick="mudarFundo('item3', 'Istanbul')">Istanbul</li>
+        </ul>
+    </nav>
+    <section class="conteudo">
+        <div class="topo">
+            <h1 class="titulo" id="titulo">
+                Praias Gregas
+            </h1>
+
+        </div>
+        <div class="baixo">
+            <div class="card">
+                <p class="texto">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a lectus ligula. Donec sit amet ipsum sed enim sagittis dignissim. Etiam cursus tristique nulla. Duis placerat bibendum est nec aliquam. Suspendisse sed massa vestibulum, varius orci non, posuere est. Quisque porta sollicitudin nulla. Vivamus non egestas diam. Morbi rhoncus hendrerit eros in pulvinar. Nam facilisis risus ut purus viverra, in ornare ligula viverra. Donec in dictum leo. Cras imperdiet massa non ipsum varius consectetur. Sed malesuada egestas lectus, at convallis ante consectetur sit amet.
+    
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <footer class="rodape">Desenvolvido por Guilherme e Giovanna</footer>
+    <script src="js/jquery.js"></script>
+    <script>
+        function mudarFundo(imagem, titulo){
+            const wallpaper = document.getElementById('wallpaper')
+            // const tituloCard = document.getElementById('titulo')
+            wallpaper.setAttribute('src', `img/${imagem}.jpg`)
+            // tituloCard.innerHTML(titulo)
+        }
+    </script>
+</body>
+</html>

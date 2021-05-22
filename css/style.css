@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Roboto:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "menu conteudo"
+        "menu rodape";
+}
+
+img.fundo{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header.cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1F1F1Fb9;
+
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0 20px;
+
+}
+
+nav.menu{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Eixo principal */
+    align-items: center;
+    /* Eixo secundario */
+    background-color: #1F1F1Fa9;
+    grid-area: menu;
+}
+
+ul{
+    margin: 50px 0;
+    /* Y/X */
+    list-style: none;
+    font-size: 2rem;
+    width: 100%;
+    
+    text-align: center;
+
+}
+
+li{
+    margin: 20px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    
+}
+
+li:hover{
+    background-color: #1F1F1Faf;
+
+}
+
+section.conteudo{
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer.rodape{
+    grid-area: rodape;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1F1F1F99;
+    padding: 0 20px;
+}
+
+.topo{
+    height: 30%;
+    width: 100%;
+}
+
+.baixo{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.card{
+    padding: 30px;
+    height: 250px;
+    width: 500px;
+    background-color: #1F1F1F99;
+    border-radius: 3px;
+    margin: 0 50px;
+}
+
+h1.titulo{
+    margin: 50px;
+}
